@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        input{
+            margin:13px 10px;
+        }
+    </style>
+</head>
+<body>
+<form action="http://localhost:5000/result" method="POST">
+    <div>
+        First Name: <input type="text" name="First Name">
+    </div>
+    <div>
+        Last Name: <input type="text" name="Last Name">
+    </div>
+    <div>
+        User Nmae: <input type="email" name="uname">
+    </div>
+    <div>
+        Password: <input type="password" name="password">
+    </div>
+    <div>
+        Gender: Male<input type="radio" name="myGender" value="Male"> Female<input type="radio" name="myGender" value="Female">
+        <!--Here both name should be same so that only one of them can be selected-->
+    </div>
+    <div>
+        Hobbies:<label for="chbox" >Cricket:</label>
+        <input type="checkbox" name="hobby" id="chbox" value="Cricket">
+        <label for="chbox" value="Volleyball">Volleyball:</label>
+        <input type="checkbox" name="hobby" id="chbox" value="Volleyball">
+        <label for="chbox" value="Badminton">Badminton:</label>
+        <input type="checkbox" name="hobby" id="chbox" value="Badminton">
+    </div>
+    <div>
+        <label for="count">Country:</label>
+        <select name="country" id="car">
+            <option value="India">India</option>
+            <option value="USA" selected>USA</option>
+            <option value="UK">UK</option>
+        </select>
+    </div>
+    <div>
+        Address:<br> <textarea name="address" id="" cols="50" rows="7"></textarea>
+    </div>
+    <div>
+        <input type="submit" value="Submit" id="submit">
+    </div>
+</form>
+</body>
+</html>
